@@ -1,0 +1,61 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Feb 22, 2018 at 07:57 PM
+-- Server version: 5.6.38
+-- PHP Version: 7.1.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `subscription`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subscribers`
+--
+
+CREATE TABLE `subscribers` (
+  `SUB_ID` int(5) NOT NULL,
+  `SUB_Email` varchar(90) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `subscribers`
+--
+
+INSERT INTO `subscribers` (`SUB_ID`, `SUB_Email`) VALUES
+(21, 'choquette564bleriot@outlook.com'),
+(16, 'frederic.desautels@bell.ca'),
+(14, 'fredesautels@gmail.com'),
+(20, 'remichoq@gmail.com'),
+(12, 'remichoq@hotmail.com'),
+(19, 'romainmarot7@gmail.com'),
+(13, 'twekerpmc@gmail.com'),
+(18, 'victoria.riverin@outlook.com');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `subscribers`
+--
+ALTER TABLE `subscribers`
+  ADD PRIMARY KEY (`SUB_ID`),
+  ADD UNIQUE KEY `SUB_Email` (`SUB_Email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `subscribers`
+--
+ALTER TABLE `subscribers`
+  MODIFY `SUB_ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
